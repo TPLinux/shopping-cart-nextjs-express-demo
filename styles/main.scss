@@ -1,0 +1,114 @@
+$color1: black;
+$color2: orange;
+$color3: darkred;
+$color4: darkgreen;
+$color5: skyblue;
+$navTextColor: white;
+$cardBorderColor: #b9b9b9;
+$cardBg: #e1e1e1;
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+body{
+    padding:0;
+    margin: 0;
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    background-color: $color1;
+    padding: 20px;
+    width: 100vw;
+    a{
+	text-decoration: none;
+	margin: 0px 10px;
+	color: $navTextColor;
+	font-weight: bold;
+    }
+}
+.content{
+    padding: 20px; 
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+}
+.btn{
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+.red-btn{
+    background-color: $color3;
+}
+
+.blue-btn{
+    background-color: $color5;
+}
+
+.orange-btn{
+    background-color: $color2;
+}
+
+#cart-items{
+    border-collapse: collapse;
+    th, td {
+	border: 1px solid black;
+	text-align: center;
+    }
+    th{
+	padding: 20px;
+	color: white;
+	background-color: black;
+	font-weight: bold;
+    }
+    td{
+	padding: 10px;
+    }
+}
+
+#products-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    /* product */
+    div{
+	direction: ltr;
+	text-align: left;
+	margin: 20px;
+	padding: 10px;
+	padding-bottom: 20px;
+	background-color: $cardBg;
+	border-radius: 3px;
+	border: 1px solid $cardBorderColor;
+	h3{
+	    span{
+		color: green;
+	    }
+	}
+	img{
+	    width: '100%';
+	    border: 2px solid $cardBorderColor;
+	    border-radius: 5px;
+	    background-color: white;
+	    
+	}
+	#cat{
+	    padding: 10px;
+	    border-radius: 2px;
+	    background-color: $color2;
+	    color: white;
+	    font-weight: bold;
+	}
+	button{
+	    background-color: $color4;
+	    buttom: 2;
+	    right: 3;
+	    position: absolute;
+	}
+    }
+}
